@@ -1,0 +1,10 @@
+package pack;
+
+public class Account {
+
+	public void setAcc_no(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

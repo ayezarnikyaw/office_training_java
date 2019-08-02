@@ -1,0 +1,15 @@
+package pack;
+interface test{
+	
+}
+A class implements test{
+	
+}
+public class A{  
+	public static void main(String[] args) {
+		test t = new B();
+	}
+	  public void msg(){
+		  System.out.println("Hello");
+		  }  
+	}  

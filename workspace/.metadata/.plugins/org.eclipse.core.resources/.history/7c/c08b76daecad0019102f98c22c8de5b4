@@ -1,0 +1,19 @@
+package javatest;
+abstract class TestMaster{
+	TestMaster(){
+		System.out.println("jo");
+	}
+	abstract void runtest();
+}
+
+class Test1 extends TestMaster{
+	void runtest(){
+		System.out.println("Running Testing 1");
+	}
+}
+class Test{
+	public static void main(String[] args) {
+		TestInterface tm = new Test1();
+		tm.runtest();
+	}
+}

@@ -1,0 +1,9 @@
+package pack;
+
+public class AccountTest {
+	public static void main(String[] args) {
+		Account acc = new Account();
+		acc.setAcc_no(1000);
+		System.out.println();acc.getAcc_no();
+	}
+}

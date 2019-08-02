@@ -1,0 +1,22 @@
+package javatest;
+interface TestInterface  {
+void runtest();
+}
+
+abstract class Test2 implements  TestInterface{
+	public void runtest(){
+		System.out.println("Running Testing 1");
+	}
+}
+class Test1 extends Test2{
+	private void sout() {
+		// TODO Auto-generated method stub
+
+	}
+}
+class Test{
+	public static void main(String[] args) {
+		TestInterface tm = new Test1();
+		tm.runtest();
+	}
+}

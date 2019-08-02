@@ -1,0 +1,26 @@
+package javatest;
+
+class A{  
+	A(){
+		System.out.println("A class");
+		message();
+	}
+A get(){return this;}  
+void message(){
+	System.out.println("super class");
+}
+}  
+  
+class Test extends A{  
+	Test(){
+		super();
+	}
+	Test get(){return this;}  
+void message(){System.out.println("welcome to covariant return type");}  
+  
+public static void main(String args[]){  
+new Test().get().message();  
+Test t = new Test();
+t.message();
+}  
+}  

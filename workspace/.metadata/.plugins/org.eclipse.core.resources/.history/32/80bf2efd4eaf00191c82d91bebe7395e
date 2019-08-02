@@ -1,0 +1,10 @@
+package javatest;
+
+class Test{
+	public static void main(String[] args) {
+		TestInterface tm = new Test2();
+		tm.runtest();
+//		tm.run();
+//		tm.testing();
+	}
+}

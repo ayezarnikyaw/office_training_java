@@ -1,0 +1,16 @@
+package javatest;
+interface TestInterface  {
+void runtest();
+}
+
+abstract class Test1 implements  TestInterface{
+	public void runtest(){
+		System.out.println("Running Testing 1");
+	}
+}
+class Test{
+	public static void main(String[] args) {
+		TestInterface tm = new Test1();
+		tm.runtest();
+	}
+}

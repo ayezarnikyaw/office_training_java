@@ -1,0 +1,9 @@
+package javatest;
+class Animal(){
+	
+}
+class Test{
+	public static void main(String[] args) {
+		
+	}
+}

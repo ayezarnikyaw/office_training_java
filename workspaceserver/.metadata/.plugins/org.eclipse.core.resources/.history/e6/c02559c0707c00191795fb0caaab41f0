@@ -1,0 +1,97 @@
+package server;
+
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class orderServer {
+	ServerSocket server;
+	Socket socket;
+	DataInputStream in;
+	DataOutputStream out;
+	
+	public orderServer(){
+		
+	String command="";
+//	int book = 250;
+//	int pencil = 150;
+//	int eraser = 100;
+//	int pen = 150;
+//	int ruler = 200;
+	int quantity = 0;
+	int result = 0;
+	
+	boolean flag = true;
+	
+	try{
+		server = new ServerSocket(7000);
+		System.out.println("Server is ready!");
+		socket = server.accept();
+		System.out.println("Connection is established.");
+		
+		while(flag){ 
+			
+			System.out.println("\nWaitingrequest.....");
+			in = new DataInputStream(socket.getInputStream());
+			command = in.readUTF();
+			quantity = in.readInt();
+
+			result=0;
+
+			System.out.println("num1 = " + quantity);			
+			command = in.readUTF();
+//			book = in.readInt();
+//			pencil = in.readInt();
+//			eraser = in.readInt();
+//			pen = in.readInt();
+//			ruler = in.readInt();
+
+		    System.out.println("Item Name = " + command);
+		    System.out.println("Quality = " + quantity);
+		    
+			if (command.toUpperCase().equals("BOOK"))
+				result = Book(quantity);	
+			else if (command.toUpperCase().equals("PENCIL"))
+				result = Pencil(pencil, quantity);
+			else if (command.toUpperCase().equals("EARSER"))
+				result = Eraser(eraser, quantity);
+			else if (command.toUpperCase().equals("PEN"))
+				result = Pen(pen, quantity);
+			else if (command.toUpperCase().equals("RULER"))
+				result = Ruler(ruler, quantity);
+			}
+		
+		}catch(Exception e){
+			try { 
+				socket.close();
+				System.out.println("The connection is closed.");
+				} catch (IOException e1){
+			e1.printStackTrace();
+			}
+		}
+	}
+		private int Book(int qty) {
+		    return (250 * qty);
+		}
+		private int Pencil(int Pencil, int Quality) {
+			return (Pencil * Quality);
+	   }
+		private int Eraser(int Eraser, int Quality) {
+			return (Eraser * Quality);
+	   }
+		private int Pen(int Pen, int Quality) {
+			return (Pen * Quality);
+	   }
+		private int Ruler(int Ruler, int Quality) {
+			return (Ruler * Quality);
+	   }
+		
+	public static void main(String[] args) throws Exception{
+		
+		new orderServer();
+		
+		}	
+	
+}

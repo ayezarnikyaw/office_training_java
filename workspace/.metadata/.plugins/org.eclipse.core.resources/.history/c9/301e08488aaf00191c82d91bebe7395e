@@ -1,0 +1,9 @@
+package pack;  
+public class Student{  
+	public  void msg(){System.out.println("Hello");}
+
+	public void setName(String string) {
+		// TODO Auto-generated method stub
+		
+	}  
+	}  

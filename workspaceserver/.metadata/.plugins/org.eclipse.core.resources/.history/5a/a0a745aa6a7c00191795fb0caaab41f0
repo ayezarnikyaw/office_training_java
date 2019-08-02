@@ -1,0 +1,88 @@
+package server;
+
+import java.io.*; 
+import java.net.*; 
+public class TotalServer{ 
+	ServerSocket server; 
+    Socket socket; 
+    DataInputStream in; 
+    DataOutputStream out; 
+public TotalServer(){
+	String command="";
+	int Quality =0 ;
+    int result=0;
+    int Book = 250;
+    int Pencil = 150;
+    int Eraser = 100;
+    int Pen = 150;
+    int Ruler = 200; 
+    boolean flag = true; 
+   
+try
+  { 
+	server = new ServerSocket(7000); 
+	System.out.println("Server is ready!"); 
+    socket = server.accept(); 
+    System.out.println("Connection is established."); 
+	while(flag) 
+	   { 
+	    System.out.println("\nWaitingrequest....."); 
+	    in = new DataInputStream(socket.getInputStream()); 
+	    command = in.readUTF();
+//	    Book   = in.readInt();
+//	    Pencil = in.readInt();
+	    Quality = in.readInt();
+	    result=0;
+	    
+	    System.out.println("Item Name = " + command);
+	    System.out.println("Quality = " + Quality);	    
+	    if (command.toUpperCase().equals("BOOK"))
+	    	result = Book(Book, Quality);	
+	    else if (command.toUpperCase().equals("PENCIL"))
+	    	result = Pencil(Pencil, Quality);	
+
+	    else if (command.toUpperCase().equals("ERASER"))
+	    	result = Eraser(Eraser, Quality);	
+
+	    else if (command.toUpperCase().equals("PEN"))
+	    	result = Pen(Pen, Quality);	
+	    
+		else if(command.toUpperCase().equals("RULER"))
+		result = Ruler(Ruler, Quality);
+		else System.out.println("Item Name = Noitem Quatity= 0");
+	    
+	    
+
+		out = new DataOutputStream(socket.getOutputStream());
+		out.writeInt(result);
+		}
+		}catch(Exception e){
+		try { 
+			socket.close();
+			System.out.println("The connection is closed.");
+		} catch (IOException e1)
+		{
+		e1.printStackTrace();
+		}
+	}
+} 	
+		private int Book(int Book, int Quality) {
+		    return (Book * Quality);
+		}
+		private int Pencil(int Pencil, int Quality) {
+			return (Pencil * Quality);
+	   }
+		private int Eraser(int Eraser, int Quality) {
+			return (Eraser * Quality);
+	   }
+		private int Pen(int Pen, int Quality) {
+			return (Pen * Quality);
+	   }
+		private int Ruler(int Ruler, int Quality) {
+			return (Ruler * Quality);
+	   }
+	    		
+		public static void main(String[] args) throws Exception {
+			new TotalServer();
+			}
+		}

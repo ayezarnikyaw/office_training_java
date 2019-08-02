@@ -1,0 +1,8 @@
+package mypack;
+
+class B extends A{  
+	  public static void main(String args[]){  
+		  pack.A obj = new pack.A();//Compile Time Error  
+	   obj.msg();//Compile Time Error  
+	  }  
+	}  

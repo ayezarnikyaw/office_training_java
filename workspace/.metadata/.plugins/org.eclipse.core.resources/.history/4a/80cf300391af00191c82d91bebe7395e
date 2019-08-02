@@ -1,0 +1,8 @@
+package mypack;
+//import pack.*;  
+class B{
+	int a[]={33,3,4,5};
+	for(int i=0; i<a.length; i++){
+		
+	}
+}

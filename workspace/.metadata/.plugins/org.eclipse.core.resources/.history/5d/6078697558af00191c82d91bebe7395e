@@ -1,0 +1,14 @@
+package mypack;
+
+class A{  
+default void data(){ System.out.println("40");} 
+default void msg(){System.out.println("Hello java");}  
+}  
+  
+public class B{  
+ public static void main(String args[]){  
+   A obj=new A();  
+   obj.data();//Compile Time Error  
+   obj.msg();//Compile Time Error  
+   }  
+}  

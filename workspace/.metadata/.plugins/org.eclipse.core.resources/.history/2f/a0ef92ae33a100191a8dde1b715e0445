@@ -1,0 +1,27 @@
+package javatest;
+class Animal{
+	void eat(){
+		System.out.println("eating ...");
+	}
+	
+}
+class Cat extends Animal{
+	void eat(){
+		System.out.println("eating fish");
+	}
+}
+class Dog extends Animal{
+	void eat(){
+		System.out.println("eating chicken...");
+	}
+}
+class Lion extends Animal{
+	void eat(){
+		System.out.println("eating meat..");
+	}
+}
+class Test{
+	public static void main(String[] args) {
+		
+	}
+}

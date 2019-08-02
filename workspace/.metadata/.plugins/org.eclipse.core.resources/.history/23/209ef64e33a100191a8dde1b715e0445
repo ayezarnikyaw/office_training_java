@@ -1,0 +1,9 @@
+package javatest;
+class Animal(){
+	System.out.println("eating ...");
+}
+class Test{
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 6 elements from project &apos;javalearning&apos;&#x0D;&#x0A;- Original project: &apos;javalearning&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     images1.jfif&#x0D;&#x0A;     images2.jfif&#x0D;&#x0A;     images3.jfif&#x0D;&#x0A;     images4.jfif&#x0D;&#x0A;     images5.jfif&#x0D;&#x0A;     images6.jfif" description="Delete elements" element1="src/AWT/images5.jfif" element2="src/AWT/images2.jfif" element3="src/AWT/images1.jfif" element4="src/AWT/images4.jfif" element5="src/AWT/images3.jfif" element6="src/AWT/images6.jfif" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="6" stamp="1550141782299" subPackages="false" version="1.0"/>
+</session>

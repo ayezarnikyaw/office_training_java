@@ -1,0 +1,17 @@
+package javatest;
+class Animal{
+	void eat(){
+		System.out.println("eating ...");
+	}
+	
+}
+class Cat extends Animal{
+	void eat(){
+		
+	}
+}
+class Test{
+	public static void main(String[] args) {
+		
+	}
+}

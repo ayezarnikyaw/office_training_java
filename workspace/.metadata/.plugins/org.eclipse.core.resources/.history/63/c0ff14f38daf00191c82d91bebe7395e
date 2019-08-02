@@ -1,0 +1,12 @@
+package pack;
+
+public class Account {
+
+	private int acc_no;
+
+	public void setAcc_no(int acc_no) {
+		// TODO Auto-generated method stub
+		this.acc_no = acc_no;
+	}
+
+}
