@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<welcome-file-list>
+<welcome-file>DateTimeTest.jsp</welcome-file>
+<welcome-file>JSPEg2.jsp</welcome-file>
+<welcome-file>TableEg1.jsp</welcome-file>
+</welcome-file-list>
+</web-app>

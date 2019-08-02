@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>  
+<welcome-file-list>
+<welcome-file>OrderForm.html</welcome-file>
+</welcome-file-list> 
+
+<servlet>  
+<servlet-name>ShowItems</servlet-name>  
+<servlet-class>ex2_session.ShowItems</servlet-class>  
+</servlet>  
+ 
+<servlet-mapping>  
+<servlet-name>ShowItems</servlet-name>  
+<url-pattern>/ShowItems</url-pattern>  
+</servlet-mapping>  
+  
+</web-app>

@@ -1,0 +1,10 @@
+127.0.0.1 - - [11/Jul/2019:17:28:49 +0630] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [11/Jul/2019:17:28:53 +0630] "GET /StudentRegistration/registration HTTP/1.1" 200 836
+127.0.0.1 - - [11/Jul/2019:17:29:02 +0630] "GET /StudentRegistration/registrationServlet?Name=wq&r=Male&NRC=q&FatherName=fff&Address=fff&Phone=ff&submit=Submit HTTP/1.1" 200 1455
+127.0.0.1 - - [11/Jul/2019:17:58:36 +0630] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [11/Jul/2019:17:58:39 +0630] "GET /JSP_EX/index.jsp HTTP/1.1" 200 179
+127.0.0.1 - - [11/Jul/2019:18:02:38 +0630] "GET /JSP_EX/index.jsp HTTP/1.1" 200 486
+127.0.0.1 - - [11/Jul/2019:18:08:52 +0630] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [11/Jul/2019:18:08:53 +0630] "GET /JSP_EX/ex.jsp HTTP/1.1" 500 2993
+127.0.0.1 - - [11/Jul/2019:18:13:55 +0630] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [11/Jul/2019:18:13:55 +0630] "GET /JSP_EX/ex.jsp HTTP/1.1" 500 2993

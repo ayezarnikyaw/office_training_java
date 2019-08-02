@@ -1,0 +1,15 @@
+INDEX VERSION 1.131
+D:\aznk\eclipse-workspace_ee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4166461911.index
+\JSP_EXE\src
+D:\aznk\eclipse-workspace_ee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2395812201.index
+\EX3_JSP\src
+D:\aznk\eclipse-workspace_ee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\441872876.index
+\DB_EG\src
+D:\aznk\eclipse-workspace_ee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\5029233.index
+\JSP_TEST\src
+D:\aznk\eclipse-workspace_ee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3937592931.index
+\JavaServletSendRedirectEx\src\main\java
+D:\aznk\eclipse-workspace_ee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1322170069.index
+\DB_EG\src
+D:\aznk\eclipse-workspace_ee\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\94809763.index
+\JSP_EX\src

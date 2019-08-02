@@ -1,0 +1,15 @@
+127.0.0.1 - - [27/Jun/2019:17:39:33 +0630] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [27/Jun/2019:17:39:36 +0630] "GET /StudentRegistration/registration HTTP/1.1" 200 836
+127.0.0.1 - - [27/Jun/2019:17:49:22 +0630] "GET /StudentRegistration/registrationServlet?Name=aye&r=Male&NRC=12&FatherName=u+win&Address=hlaing&Phone=094480&submit=Submit HTTP/1.1" 200 966
+127.0.0.1 - - [27/Jun/2019:17:52:06 +0630] "GET /StudentRegistration/registrationServlet?Name=&r=Male&NRC=&FatherName=&Address=hlaing&Phone=&submit=Submit HTTP/1.1" 200 1041
+127.0.0.1 - - [27/Jun/2019:18:08:37 +0630] "GET /StudentRegistration/printExcel HTTP/1.1" 500 1489
+127.0.0.1 - - [27/Jun/2019:18:10:13 +0630] "GET /StudentRegistration/printExcel HTTP/1.1" 500 1489
+127.0.0.1 - - [27/Jun/2019:18:11:16 +0630] "GET /StudentRegistration/printExcel HTTP/1.1" 500 1489
+127.0.0.1 - - [27/Jun/2019:18:12:49 +0630] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [27/Jun/2019:18:12:50 +0630] "GET /StudentRegistration/registration HTTP/1.1" 200 836
+127.0.0.1 - - [27/Jun/2019:18:13:01 +0630] "GET /StudentRegistration/registrationServlet?Name=name&r=Male&NRC=12&FatherName=dd&Address=dd&Phone=ddddd&submit=Submit HTTP/1.1" 200 959
+127.0.0.1 - - [27/Jun/2019:18:13:07 +0630] "GET /StudentRegistration/printExcel HTTP/1.1" 200 24605
+127.0.0.1 - - [27/Jun/2019:18:14:58 +0630] "GET /StudentRegistration/printExcel HTTP/1.1" 200 24605
+127.0.0.1 - - [27/Jun/2019:18:19:32 +0630] "GET / HTTP/1.1" 404 1074
+127.0.0.1 - - [27/Jun/2019:18:19:32 +0630] "GET /StudentRegistration/registration HTTP/1.1" 200 836
+127.0.0.1 - - [27/Jun/2019:18:19:45 +0630] "GET /StudentRegistration/registrationServlet?Name=a&r=Male&NRC=12&FatherName=a&Address=aaa&Phone=aaa&submit=Submit HTTP/1.1" 200 1454
